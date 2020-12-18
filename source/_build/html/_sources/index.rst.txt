@@ -58,9 +58,4 @@ in this documentation.
    /engine/index.rst
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+this is for checking the update on readthedocs

@@ -92,6 +92,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../model/index.html">Module of Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dataset/index.html">Module of Dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../loss/index.html">Module of Loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engine/index.html">Module of Engine</a></li>
 </ul>
 
             
@@ -161,7 +162,34 @@
             
   <div class="section" id="hierarchy-of-configuration-file">
 <span id="conf-file"></span><h1>Hierarchy of Configuration File<a class="headerlink" href="#hierarchy-of-configuration-file" title="Permalink to this headline">¶</a></h1>
-<p>some description here.</p>
+<p>All the modules used in an algorithm can be easily set in the configuration file
+with <em>yaml</em> format.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>engine:
+    type:
+algorithm:
+    type:
+    ...
+    backbone:
+        type:
+        ...
+    neck:
+        type:
+        ...
+    head:
+        type:
+        ...
+    ...
+train_cfg:
+test_cfg:
+train_pipeline:
+val_pipeline:
+test_pipeline:
+data:
+    type:
+    ...
+runtime:
+</pre></div>
+</div>
 </div>
 <div class="section" id="management-of-modules">
 <span id="management"></span><h1>Management of Modules<a class="headerlink" href="#management-of-modules" title="Permalink to this headline">¶</a></h1>

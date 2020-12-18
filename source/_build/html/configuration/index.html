@@ -92,6 +92,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../model/index.html">Module of Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dataset/index.html">Module of Dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../loss/index.html">Module of Loss</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../engine/index.html">Module of Engine</a></li>
 </ul>
 
             
@@ -161,15 +162,33 @@
 <h1>Module Configuration<a class="headerlink" href="#module-configuration" title="Permalink to this headline">¶</a></h1>
 <p>Algorithms within this project are divided into four main modules: <strong>model</strong>,
 <strong>loss</strong>, <strong>dataset</strong> and <strong>engine</strong>, that are managed by <em>Register</em> mechanics.
-And the importing and configuration of modules, parameters are format as <em>yaml</em>
-files.</p>
-<p><strong>description of system directory structure</strong></p>
+For convenient, the importing and configuration of modules, parameters are
+format as <em>yaml</em> files.</p>
+<p>Similarly, the directory structure of system is arranged as different modules
+shown as below, for orderly management. Hence, in the documentation they would
+be introduced one by one according to the structure. Additionally, some modules
+include submodules, they are presented in corresponding chapter.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>PCLCV/
+   - main.py
+   - configs/
+   - dataset/
+   - model/
+   - loss/
+   - engine/
+   - utils/
+</pre></div>
+</div>
+<p>The <strong>main.py</strong> file is the entry of project, which is capable to parse
+configuration from <em>yaml</em> file, import the assigned modules, start the engine
+and so on. To learn more about configuration file and the <em>Register</em> mechanics
+for modules management are described in the follow sections.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="conf.html#conf-file"><span class="std std-ref">Hierarchy of Configuration File</span></a></p></li>
 <li><p><a class="reference internal" href="conf.html#management"><span class="std std-ref">Management of Modules</span></a></p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
+<p><a class="reference internal" href="../index.html"><span class="doc">Back to Homepage</span></a></p>
 </div>
 
 

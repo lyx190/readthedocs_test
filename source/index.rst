@@ -1,13 +1,11 @@
-.. _main:
-
 PCLCV API Documentation
 =======================
 
-Welcome to project **PCLCV**, which consists of seven area of computer vision 
-algorithms based on deep learning: Object Detection, Generative Adversarial 
-Network, Video Action Analysis, Mono Depth Estimation, Activate Learning, 
-Object Tracking and Segmentation, aiming to simplifies algorithms research 
-experiments.
+Welcome to project ``PCLCV``, which is an open source collection of algorithms 
+using deep learning in several fields of computer vision based on **PyTorch**:
+*Object Detection*, *Generative Adversarial Network*, *Video Action Analysis*, 
+*Mono Depth Estimation*, *Activate Learning*, *Object Tracking* and 
+*Segmentation*, aiming to simplifies algorithms research experiments.
 
 .. note::
    This documentation contains only API introduction of the project, the 
@@ -56,6 +54,3 @@ in this documentation.
    /dataset/index.rst
    /loss/index.rst
    /engine/index.rst
-
-
-this is for checking the update on readthedocs
